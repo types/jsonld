@@ -4,7 +4,7 @@
   "description": "Types for https://github.com/digitalbazaar/jsonld.js",
   "typings": "js/jsonld.d.ts",
   "scripts": {
-    "lint": "tslint \"**/*.tsx?\" -e node_modules -e bundle.d.ts",
+    "lint": "tslint \"**/*.ts\" -e \"node_modules/**\" -e \"typings/**\" -e bundle.d.ts",
     "bundle": "typings bundle -o bundle.d.ts",
     "exec": "ts-node test.ts",
     "test": "npm run lint && npm run bundle && npm run exec",

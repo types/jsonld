@@ -1,12 +1,12 @@
 import { Promise } from 'es6-promise';
 
 export interface JsonLdObject {
-  [key: string]: JsonLdPrimitive | JsonLdPrimitive[]
+  [key: string]: JsonLdPrimitive | JsonLdPrimitive[];
 }
 
-export type JsonLdPrimitive = string | number | boolean | JsonLd
+export type JsonLdPrimitive = string | number | boolean | JsonLd;
 
-export type JsonLd = JsonLdObject | JsonLdObject[]
+export type JsonLd = JsonLdObject | JsonLdObject[];
 
 export interface JsonLdCallback {
   (err: Error | null, success: JsonLd): void;
