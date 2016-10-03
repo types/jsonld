@@ -1,0 +1,37 @@
+{
+  "name": "@types/jsonld",
+  "version": "0.4.11",
+  "description": "Types for https://github.com/digitalbazaar/jsonld.js",
+  "typings": "js/jsonld.d.ts",
+  "scripts": {
+    "lint": "tslint \"**/*.tsx?\" -e node_modules -e bundle.d.ts",
+    "bundle": "typings bundle -o bundle.d.ts",
+    "exec": "ts-node test.ts",
+    "test": "npm run lint && npm run bundle && npm run exec",
+    "prepublish": "typings install",
+    "postpublish": "greenkeeper-postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/types/npm-jsonld.git"
+  },
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/types/npm-jsonld/issues"
+  },
+  "homepage": "https://github.com/types/npm-jsonld#readme",
+  "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.1",
+    "jsonld": "~0.4.11",
+    "ts-node": "^1.3.0",
+    "tslint": "^3.15.1",
+    "tslint-config-typings": "^0.2.4",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
+  }
+}
