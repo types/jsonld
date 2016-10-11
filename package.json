@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "tslint \"**/*.ts\" -e \"node_modules/**\" -e \"typings/**\" -e bundle.d.ts",
     "bundle": "typings bundle -o bundle.d.ts",
-    "exec": "ts-node test.ts",
+    "exec": "tsc && ts-node test.ts",
     "test": "npm run lint && npm run bundle && npm run exec",
     "prepublish": "typings install",
     "postpublish": "greenkeeper-postpublish"

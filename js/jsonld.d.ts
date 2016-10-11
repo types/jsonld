@@ -19,7 +19,7 @@ export interface DocumentObject {
 }
 
 export interface DocumentLoader {
-  (url: string, callback: (err: Error | null, DocumentObject) => void): void;
+  (url: string, callback: (err: Error | null, documentObject: DocumentObject) => void): void;
 }
 
 export interface NormalizeOptions {
