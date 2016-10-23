@@ -142,39 +142,39 @@ export declare class JsonLdProcessor {
    * Compact a document according to a particular context.
    * See: http://json-ld.org/spec/latest/json-ld/#compacted-document-form
    */
-  compact (doc: JsonLd | string, context: JsonLd | string, options: CompactOptions): Promise<JsonLd>;
+  compact (doc: JsonLd | string, context: JsonLd | string, options?: CompactOptions): Promise<JsonLd>;
 
   /**
    * Expand a document, removing its context.
    * See: http://json-ld.org/spec/latest/json-ld/#expanded-document-form
    */
-  expand (compacted: JsonLd | string, options: ExpandOptions): Promise<JsonLd>;
+  expand (compacted: JsonLd | string, options?: ExpandOptions): Promise<JsonLd>;
 
   /**
    * Flatten a document.
    * See: http://json-ld.org/spec/latest/json-ld/#flattened-document-form
    */
-  flatten (doc: JsonLd, options: FlattenOptions): Promise<JsonLd>;
+  flatten (doc: JsonLd, options?: FlattenOptions): Promise<JsonLd>;
 
   /**
    * Frame a document.
    * See: http://json-ld.org/spec/latest/json-ld-framing/#introduction
    */
-  frame (doc: JsonLd, frame: JsonLd, options: FrameOptions): Promise<JsonLd>;
+  frame (doc: JsonLd, frame: JsonLd, options?: FrameOptions): Promise<JsonLd>;
 
   /**
    * Normalize a document using the RDF Dataset Normalization Algorithm (URDNA2015).
    * See: http://json-ld.github.io/normalization/spec/
    */
-  normalize (doc: JsonLd, options: NormalizeOptions): Promise<JsonLd>;
+  normalize (doc: JsonLd, options?: NormalizeOptions): Promise<JsonLd>;
 
   /**
    * Serialize a document to N-Quads (RDF).
    */
-  toRDF (doc: JsonLd, options: ToRdfOptions): Promise<string>;
+  toRDF (doc: JsonLd, options?: ToRdfOptions): Promise<string>;
 
   /**
    * Deserialize N-Quads (RDF) to JSON-LD.
    */
-  fromRDF (nquads: string, options: FromRdfOptions): Promise<JsonLd>;
+  fromRDF (nquads: string, options?: FromRdfOptions): Promise<JsonLd>;
 }
