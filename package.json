@@ -27,7 +27,7 @@
   "homepage": "https://github.com/types/npm-jsonld#readme",
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
-    "jsonld": "~0.4.11",
+    "jsonld": "~0.5.17",
     "ts-node": "^3.0.3",
     "tslint": "^5.5.0",
     "tslint-config-typings": "^0.3.1",
