@@ -1,8 +1,12 @@
-# Typed Jsonld
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-jsonld.svg)](https://greenkeeper.io/)
+# JSONLD
 
 The type definition for [`jsonld`](https://github.com/digitalbazaar/jsonld.js).
+
+## Installation
+
+```
+npm install types/jsonld
+```
 
 ## License
 

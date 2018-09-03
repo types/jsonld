@@ -1,5 +1,3 @@
-/// <reference path="bundle.d.ts" />
-
 import * as jsonld from 'jsonld';
 
 jsonld.expand(
